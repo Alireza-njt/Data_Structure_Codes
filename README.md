@@ -14,4 +14,4 @@
 
 ```
 کد های نمره اضافی : 
-1. Quick Sort
+1•Quick Sort
