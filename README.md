@@ -11,3 +11,7 @@
 7•Binary Tree
 8•Indexed
 ```
+
+```
+کد های نمره اضافی : 
+1. Quick Sort
