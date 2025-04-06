@@ -15,3 +15,4 @@
 ```
 کد های نمره اضافی : 
 1•Quick Sort
+2•Counting Sort
