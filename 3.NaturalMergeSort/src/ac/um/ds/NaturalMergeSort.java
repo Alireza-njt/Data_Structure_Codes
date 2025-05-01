@@ -48,31 +48,30 @@ public class NaturalMergeSort<T extends Comparable<T>> implements ISort<T> {
     }
 
     public void merge(T[] arr, int p, int q, int r) {
-        T[] OLD_PART_OF_OUR_ARRAY = arr.clone();
+        Queue<T> NEW_PART_OF_OUR_ARRAY = new LinkedList<>();
         int a0 = p;
         int a1 = q - 1;
         int a2 = q;
         int a3 = r - 1;
-        int index_for_new_part = p;
         while (a0 <= a1 && a2 <= a3) {
-            if (OLD_PART_OF_OUR_ARRAY[a0].compareTo(OLD_PART_OF_OUR_ARRAY[a2]) <= 0) {
-                arr[index_for_new_part] = OLD_PART_OF_OUR_ARRAY[a0];
+            if (arr[a0].compareTo(arr[a2]) <= 0) {
+                NEW_PART_OF_OUR_ARRAY.add(arr[a0]);
                 a0++;
             } else {
-                arr[index_for_new_part] = OLD_PART_OF_OUR_ARRAY[a2];
+                NEW_PART_OF_OUR_ARRAY.add(arr[a2]);
                 a2++;
             }
-            index_for_new_part++;
         }
         while (a0 <= a1) {
-            arr[index_for_new_part] = OLD_PART_OF_OUR_ARRAY[a0];
+            NEW_PART_OF_OUR_ARRAY.add(arr[a0]);
             a0++;
-            index_for_new_part++;
         }
         while (a2 <= a3) {
-            arr[index_for_new_part] = OLD_PART_OF_OUR_ARRAY[a2];
+            NEW_PART_OF_OUR_ARRAY.add(arr[a2]);
             a2++;
-            index_for_new_part++;
+        }
+        for (int i = p; i < r; i++) {
+            arr[i] = NEW_PART_OF_OUR_ARRAY.poll();
         }
     }
 }
