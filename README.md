@@ -16,4 +16,4 @@
 کد های نمره اضافی : 
 1•Quick Sort
 2•Counting Sort
-3•Binary Tree
+3•Binary Search Tree
