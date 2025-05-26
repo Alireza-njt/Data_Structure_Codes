@@ -3,7 +3,7 @@
 
 package com.company.java;
 
-public class BinaryTree {
+public class BinarySearchTree {
 
     static public void insert_new_node(Node Dummy_node, final Node new_node) {
         Node Current_node = Dummy_node;

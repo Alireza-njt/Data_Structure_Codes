@@ -24,13 +24,13 @@ public class Main {
         System.out.println("________________________________________________________________________________________________________________________________");
 
         for (int i = 0; i < n; i++) {
-            BinaryTree.insert_new_node(Dummy_Root, nodes[i]);
+            BinarySearchTree.insert_new_node(Dummy_Root, nodes[i]);
         }
 
         System.out.println("Sorted Array : ");
 
         Node First_node = Dummy_Root.getLeft_Child();
-        BinaryTree.inorder_traversal(First_node);
+        BinarySearchTree.inorder_traversal(First_node);
 
     }
 
