@@ -5,11 +5,10 @@
 1•Selection Sort
 2•Radix Sort
 3•Natural Merge Sort
-4•Five ways
-5•Hash table
-6•K-pivot
-7•Binary Tree
-8•Indexed
+4•Hash table
+5•K-pivot
+6•Binary Tree
+7•Indexed
 ```
 
 ```
